@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="stylesheets/app.css">
 
   <script src="javascripts/modernizr.foundation.js"></script>
+  <script src="javascripts/mustache.js"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -37,15 +38,16 @@
       <h1><img style="vertical-align:-15px;" width="80px" src="./images/logo.png"/>
         <span style="text-shadow:0px 2px 0px rgba(0, 0, 0, 0.75); color:white; font-family: 'logo', sans-serif;">gukere</span>
       </h1>
-      <p style="color:white; font-size:17px;">Aplicaciones web para <strong>todos</strong> tus dispositivos.</p>
+      <p class="slogan" style="color:white; font-size:17px;">{{Slogan1}} <strong>{{Slogan2}}</strong> {{Slogan3}}</p>
     </div>
 
     <center>
     <div style="margin-top:20px" class="six columns">
-      <a>Qué hacemos</a>
-      <a>Nosotros</a>
-      <a>Clientes & Premios</a>
-        <div align="center" style="margin-top:30px"><a href="#" class="button">Mándanos un Mail</a></div>
+      <a class="quehacemos">{{Quehacemos}}</a>
+      <a class="nosotros">{{Nosotros}}</a>
+      <a class="clientes">{{Clientes}}</a>
+        <div align="center" style="margin-top:30px"><a href="#" class="button mail">{{Mail}}</a></div>
+        <div align="center" style="margin-top:30px"><a onClick="setLang('eu')" href="#">EU</a> <a onClick="setLang('es')" href="#">ES</a> <a onClick="setLang('en')" href="#">EN</a></div>
     </div>
     </center>
 
@@ -67,10 +69,10 @@
 
   <div style="margin:0px 0px; background:white;">
 
-      <div class="row"><h2>> Qúe hacemos</h2>
+      <div class="row"><h2 class="quehacemos">{{Quehacemos}}</h2>
         <div class="eight columns">
           <div style="margin-top:40px;" class="panel">
-            <p style="text-align:justify;">Desarrollamos aplicaciones web para todos los dispositivos utilizando <strong>Responsive design</strong>, sin olvidarnos de que la experiencia de usuario es muy diferente dependiendo del dispositivo que utilice y adecuando la aplicación para cada uso automáticamente.</p>
+            <p style="text-align:justify;">{{Quetext1}} <strong>{{Quetext2}}</strong> {{Quetext3}}</p>
           </div>
         </div>
 
@@ -78,7 +80,7 @@
 
         <div class="eight columns">
           <div style="margin-top:40px;" class="panel">
-            <p style="text-align:justify;">Para ello utilizamos en estándar <strong>HMTL5+CSS3+JavaScript</strong> que nos ofrece nuevas posibilidades. Con un solo desarrollo, conseguimos aplicaciones que se pueden utilizar en cualquier dispositivo con conexión a internet y un navegador, con las mismas funcionalidades que ofrecen las aplicaciones nativas.</p>
+            <p style="text-align:justify;">{{Quetext4}} <strong>{{Quetext5}}</strong> {{Quetext6}}</p>
           </div>
         </div>
 
@@ -90,26 +92,26 @@
 
     <div style="background:#FFC507; margin:0px">
 
-    <div class="row"><h2>> Nosotros</h2>
+    <div class="row"><h2 class="nosotros">{{Nosotros}}</h2>
     <center style="margin-top:20px;">
     <div style="margin:0px 30px;" class="three columns">
       <div style="background:rgba(0,0,0,0.7); position:relative;top:38px; height:30px; color:white;">
         <b style="vertical-align:-8px;">Iñaki Cortajarena<b></div>
       <img style="border:solid 8px #000000;" width="220px" src="./images/inaki.png" />
 
-      <p><strong>Desarrollador front-end y diseñador.</strong></p>
+      <p><strong>{{Nostext1}}</strong></p>
     </div>
     <div style="margin:0px 30px;" class="three columns">
       <div style="background:rgba(0,0,0,0.7); position:relative;top:38px; height:30px; color:white;">
         <b style="vertical-align:-8px;">Andoni Gómez<b></div>
       <img style="border:solid 8px #000000;" width="220px" src="./images/andoni.jpg" />
-      <p><strong>Andoni Gómez:</strong> Desarrollador back-end y base de datos.</p>
+      <p><strong>{{Nostext2}}</strong></p>
     </div>
     <div style="margin:0px 30px;" class="three columns">
       <div style="background:rgba(0,0,0,0.7); position:relative;top:38px; height:30px; color:white;">
         <b style="vertical-align:-8px;">Joseba Nogales<b></div>
       <img style="border:solid 8px #000000;" width="220px" src="./images/inaki.png" />
-      <p><strong>Joseba Nogales:</strong> Desarrollador back-end y servicios web.</p>
+      <p><strong>{{Nostext3}}</strong></p>
     </div>
     </center>
 
@@ -120,8 +122,8 @@
   <div style="background:#817f82; margin:0px">
   <div class="row">
     <div class="twelve columns">
-      <h2 style="margin-bottom:30px;">> Clientes & Premios</h2>
-      <h5>- Premio Kimuberri</h5>
+      <h2 style="margin-bottom:30px;" class="clientes">{{Clientes}}</h2>
+      <h5>- {{Clitext}}</h5>
       <h5>- Mondragon Unibertsitatea</h5>
       <h5>- ISEA</h5>
       <hr/>
@@ -182,6 +184,8 @@
   
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
+  <script src="javascripts/lang/template.js"></script>
+  <script src="javascripts/ml.js"></script>
 
   
     <script>
