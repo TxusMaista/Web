@@ -12,12 +12,12 @@
   <meta name="viewport" content="width=device-width" />
 
   <title>Gukere</title>
-  
+
   <!-- Included CSS Files (Uncompressed) -->
   <!--
   <link rel="stylesheet" href="stylesheets/foundation.css">
   -->
-  
+
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="stylesheets/foundation.css">
   <link rel="stylesheet" href="stylesheets/app.css">
@@ -32,47 +32,79 @@
 
 </head>
 <body>
+  <center>
+    <img alt="full screen background image" src="./images/ejem.jpg" id="full-screen-background-image" />
+  </center>
 
-  <div class="row">
+  <div class="row" style="background:transparent;">
     <div class="six columns">
       <h1><img style="vertical-align:-15px;" width="80px" src="./images/logo.png"/>
         <span style="text-shadow:0px 2px 0px rgba(0, 0, 0, 0.75); color:white; font-family: 'logo', sans-serif;">gukere</span>
       </h1>
-      <p class="slogan" style="color:white; font-size:17px;">{{Slogan1}} <strong>{{Slogan2}}</strong> {{Slogan3}}</p>
     </div>
 
     <center>
-    <div style="margin-top:20px" class="six columns">
-      <a class="quehacemos">{{Quehacemos}}</a>
-      <a class="nosotros">{{Nosotros}}</a>
-      <a class="clientes">{{Clientes}}</a>
-        <div align="center" style="margin-top:30px"><a href="#" class="button mail">{{Mail}}</a></div>
-        <div align="center" style="margin-top:30px"><a onClick="setLang('eu')" href="#">EU</a> <a onClick="setLang('es')" href="#">ES</a> <a onClick="setLang('en')" href="#">EN</a></div>
+    <div style="margin-top:20px;font-size:4em;" class="six columns">
+      <a class="quehacemos">What</a>
+      <a class="nosotros">How</a>
+      <a class="clientes">Who</a>
+      <a class="contacto">Contact</a>
     </div>
     </center>
-
-    <hr/>
   </div>
 
-  
-
-  <div style="margin-bottom:30px;" class="row">
-    <div class="twelve columns">
-      <div id="featured">
-        <img src="./images/1.png" alt="slide image">
-        <img src="./images/2.png" alt="slide image">
-        <img src="./images/3.png" alt="slide image">
-      </div>
+  <div id="eslogan" class="" style="margin:0px 0px; background:url(./images/dot-pattern.png);height:500px">
+    <div id="sltext" style=" margin:0 auto 0 auto; width:700px;padding-top:180px;text-align:center;">
+      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 4em;">Universal web apps</span>
+      <br>
+      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 3.5em;">"Use everywhere you want"</span>
     </div>
   </div>
-  
 
   <div style="margin:0px 0px; background:white;">
 
-      <div class="row"><h2 class="quehacemos">{{Quehacemos}}</h2>
+      <div style="margin:0px 0px; background:#008FD5;">
+
+      <div style="color:white;" class="row"><h2>> Qué hacemos</h2>
+        <div class="four columns">
+          <div style="margin-top:40px;" class="panel2">
+            <div style="border-radius:15px; margin-bottom:20px; padding:10px; background:rgba(256,256,256,0.4);">
+            <center><img width="120px" src="./images/crawler.png" /></center>
+            </div>
+            <p style="text-align:justify;"><strong>Recogemos</strong> información de todas las redes sociales, Rss, Apis y páginas webs de terceros.</p>
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div style="margin-top:40px;" class="panel2">
+            <div style="border-radius:15px; margin-bottom:20px; padding:10px; background:rgba(256,256,256,0.4);">
+            <center><img width="120px" src="./images/tratamiento.png" /></center>
+            </div>
+            <p style="text-align:justify;"><strong>Tratamos</strong> la información conseguida y la enriquecemos, categorizandola, valorandola y estructurandola.</p>
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div style="margin-top:40px;" class="panel2">
+            <div style="border-radius:15px; margin-bottom:20px; padding:10px; background:rgba(256,256,256,0.4);">
+            <center><img width="160px" src="./images/multi.png" /></center>
+            </div>
+            <p style="text-align:justify;"><strong>Presentamos</strong> la información tratada, personalizada a cada usuario y disponible para todos los dispositivos.</p>
+          </div>
+        </div>
+
+<!--         <center><img style="border:solid 8px #000000;" width="150px" src="./images/responsive.png"/></center>
+ -->      </div>
+      </div>
+
+    </div>
+
+    <div style="margin:0px 0px; background:white;">
+
+      <div class="row"><h2>> Cómo</h2>
         <div class="eight columns">
           <div style="margin-top:40px;" class="panel">
-            <p style="text-align:justify;">{{Quetext1}} <strong>{{Quetext2}}</strong> {{Quetext3}}</p>
+            <p style="text-align:justify;">Desarrollamos aplicaciones web para todos los dispositivos utilizando <strong>Responsive design</strong>, sin olvidarnos de que la experiencia de usuario es muy diferente dependiendo del dispositivo que utilice y adecuando la aplicación para cada uso automáticamente.</p>
           </div>
         </div>
 
@@ -80,14 +112,13 @@
 
         <div class="eight columns">
           <div style="margin-top:40px;" class="panel">
-            <p style="text-align:justify;">{{Quetext4}} <strong>{{Quetext5}}</strong> {{Quetext6}}</p>
+            <p style="text-align:justify;">Para ello utilizamos en estándar <strong>HMTL5+CSS3+JavaScript</strong> que nos ofrece nuevas posibilidades. Con un solo desarrollo, conseguimos aplicaciones que se pueden utilizar en cualquier dispositivo con conexión a internet y un navegador, con las mismas funcionalidades que ofrecen las aplicaciones nativas.</p>
           </div>
         </div>
 
         <center><img style="border:solid 8px #000000;margin:15px 0px 45px 0px;" width="180px" src="./images/html5.png"/></center>
       </div>
-      
-      
+
     </div>
 
     <div style="background:#FFC507; margin:0px">
@@ -119,21 +150,32 @@
     </div>
 
 </div>
-  
-  <div style="background:#817f82; margin:0px">
-  <div class="row">
-    <div class="twelve columns">
-      <h2 style="margin-bottom:30px;" class="clientes">{{Clientes}}</h2>
-      <h5>- {{Clitext}}</h5>
-      <h5>- Mondragon Unibertsitatea</h5>
-      <h5>- ISEA</h5>
-      <hr/>
-      <center>
-      
-    </center>
+
+
+  <center style="background:black; margin:0px">
+  <div class="row" style="background:black; margin:0px">
+    <div class="page" id="contact">
+    <!-- page contact -->
+    <h3 style="color:white">  Contacto </h3>
+      <fieldset id="contact_form">
+        <div id="msgs"> </div>
+        <form id="cform" name="cform" method="post" action="">
+          <input type="text" id="name" name="name" value="Full Name*" onfocus="if(this.value == 'Full Name*') this.value = ''"
+                          onblur="if(this.value == '') this.value = 'Full Name*'" />
+          <input type="text" id="email" name="email" value="Email Address*" onfocus="if(this.value == 'Email Address*') this.value = ''"
+                          onblur="if(this.value == '') this.value = 'Email Address*'" />
+          <input type="text" id="subject" name="subject" value="Subject*" onfocus="if(this.value == 'Subject*') this.value = ''"
+                          onblur="if(this.value == '') this.value = 'Subject*'" />
+          <textarea id="msg" name="message" onfocus="if(this.value == 'Your Message*') this.value = ''"
+                          onblur="if(this.value == '') this.value = 'Your Message*'">Your Message*</textarea>
+          <button id="submit" class="button"> Send Message</button>
+        </form>
+      </fieldset>
     </div>
 
   </div>
+  </center>
+
   <center>
   <img style="margin:0px 0px 10px 0px;" width="45px" src="./images/logow.png"/>
   <span style="color:white; vertical-align:23px;">
@@ -141,59 +183,59 @@
   </span>
   <center>
   </div>
-    
+
   <!-- Included JS Files (Uncompressed) -->
   <!--
-  
+
   <script src="javascripts/jquery.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.forms.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.navigation.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.tabs.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.accordion.js"></script>
-  
+
   <script src="javascripts/jquery.placeholder.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.alerts.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.topbar.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.joyride.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.clearing.js"></script>
-  
+
   <script src="javascripts/jquery.foundation.magellan.js"></script>
-  
+
   -->
-  
+
   <!-- Included JS Files (Compressed) -->
   <script src="javascripts/jquery.js"></script>
   <script src="javascripts/foundation.min.js"></script>
-  
+
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
   <script src="javascripts/lang/template.js"></script>
   <script src="javascripts/ml.js"></script>
 
-  
+
     <script>
     $(window).load(function(){
       $("#featured").orbit();
     });
-    </script> 
-  
+    </script>
+
 </body>
 </html>
