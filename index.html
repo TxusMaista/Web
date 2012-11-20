@@ -19,6 +19,7 @@
   -->
 
   <!-- Included CSS Files (Compressed) -->
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="stylesheets/foundation.css">
   <link rel="stylesheet" href="stylesheets/app.css">
 
@@ -31,14 +32,14 @@
   <![endif]-->
 
 </head>
-<body>
+<body class="gfont">
   <center>
     <img alt="full screen background image" src="./images/ejem.jpg" id="full-screen-background-image" />
   </center>
 
   <div class="row" style="background:transparent;">
     <div class="six columns">
-      <h1><img style="vertical-align:-15px;" width="80px" src="./images/logo.png"/>
+      <h1><img style="vertical-align:-15px;" width="100px" src="./images/logo.png"/>
         <span style="text-shadow:0px 2px 0px rgba(0, 0, 0, 0.75); color:white; font-family: 'logo', sans-serif;">gukere</span>
       </h1>
     </div>
@@ -55,17 +56,19 @@
 
   <div id="eslogan" class="" style="margin:0px 0px; background:url(./images/dot-pattern.png);height:500px">
     <div id="sltext" style=" margin:0 auto 0 auto; width:700px;padding-top:180px;text-align:center;">
-      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 4em;">Universal web apps</span>
+      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 4em;font-family: 'Ubuntu', sans-serif;">Universal web apps</span>
       <br>
-      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 3.5em;">"Use everywhere you want"</span>
+      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 3.5em;font-family: 'Ubuntu', sans-serif;">"Use everywhere you want"</span>
     </div>
   </div>
 
-  <div style="margin:0px 0px; background:white;">
+
+  <section>
+    <div style="margin:0px 0px; background:white;">
 
       <div style="margin:0px 0px; background:#008FD5;">
 
-      <div style="color:white;" class="row"><h2>> Qué hacemos</h2>
+      <div style="color:white;" class="row"><p style="color: white;text-shadow: 0px 2px 3px #0071A9;font-size:56px;font-weight:bold;font-family: 'Ubuntu', sans-serif;"> Qué hacemos</p>
         <div class="four columns">
           <div style="margin-top:40px;" class="panel2">
             <div style="border-radius:15px; margin-bottom:20px; padding:10px; background:rgba(256,256,256,0.4);">
@@ -98,10 +101,11 @@
       </div>
 
     </div>
+  </section>
 
+  <section>
     <div style="margin:0px 0px; background:white;">
-
-      <div class="row"><h2>> Cómo</h2>
+      <div class="row"><p style="color: #008FD5;text-shadow: 0px 2px 3px #0071A9;font-size:56px;font-weight:bold;font-family: 'Ubuntu', sans-serif;">Cómo</p>
         <div class="eight columns">
           <div style="margin-top:40px;" class="panel">
             <p style="text-align:justify;">Desarrollamos aplicaciones web para todos los dispositivos utilizando <strong>Responsive design</strong>, sin olvidarnos de que la experiencia de usuario es muy diferente dependiendo del dispositivo que utilice y adecuando la aplicación para cada uso automáticamente.</p>
@@ -118,70 +122,81 @@
 
         <center><img style="border:solid 8px #000000;margin:15px 0px 45px 0px;" width="180px" src="./images/html5.png"/></center>
       </div>
-
     </div>
+  </section>
 
+  <section>
     <div style="background:#FFC507; margin:0px">
+      <div class="row"><p style="color: white;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;">Quién</p>
+        <center style="margin-top:20px;">
+        <div style="margin:0px 30px;" class="three columns">
+          <div class="circulars" ><img src="./images/avat1.png" alt="" /></div>
+          <p><strong>Iñaki Cortajarena</strong></p>
+          <p>"Frontend Developer"</p>
+          <p><a class="sb twitter tcircle" href="#"></a><a class="sb linkedin tcircle" href="#"></a></p>
 
-    <div class="row"><h2 class="nosotros">{{Nosotros}}</h2>
-    <center style="margin-top:20px;">
-    <div style="margin:0px 30px;" class="three columns">
-      <div style="background:rgba(0,0,0,0.7); position:relative;top:38px; height:30px; color:white;">
-        <b style="vertical-align:-8px;">Iñaki Cortajarena<b></div>
-      <img style="border:solid 8px #000000;" width="220px" src="./images/inaki.png" />
+        </div>
+        <div style="margin:0px 30px;" class="three columns">
+          <div class="circulars" ><img src="./images/avat2.png" alt="" /></div>
+          <p><strong>Andoni Gómez</strong></p>
+          <p>"Backend Developer"</p>
+          <p><a class="sb twitter tcircle" href="#"></a><a class="sb linkedin tcircle" href="#"></a></p>
 
-      <p><strong>{{Nostext1}}</strong></p>
+        </div>
+        <div style="margin:0px 30px;" class="three columns">
+          <div class="circulars" ><img src="./images/avat3.png" alt="" /></div>
+          <p><strong>Joseba Nogales</strong></p>
+          <p>"Backend Developer"</p>
+          <p><a class="sb twitter tcircle" href="#"></a><a class="sb linkedin tcircle" href="#"></a></p>
+
+        </div>
+        </center>
+      </div>
+
+<!--       <div class="row">
+        <p style="">
+            <div class="press">HTML5</div><div class="press">CSS3</div><div class="press">JavaScript</div><div class="press">Python</div><div class="press">Django</div><div class="press">No-sql</div><div class="press">MongoDB</div><div class="press">NodeJS</div><div class="press">SEM</div>
+        </p>
+      </div> -->
     </div>
-    <div style="margin:0px 30px;" class="three columns">
-      <div style="background:rgba(0,0,0,0.7); position:relative;top:38px; height:30px; color:white;">
-        <b style="vertical-align:-8px;">Andoni Gómez<b></div>
-      <img style="border:solid 8px #000000;" width="220px" src="./images/andoni.jpg" />
-      <p><strong>{{Nostext2}}</strong></p>
-    </div>
-    <div style="margin:0px 30px;" class="three columns">
-      <div style="background:rgba(0,0,0,0.7); position:relative;top:38px; height:30px; color:white;">
-        <b style="vertical-align:-8px;">Joseba Nogales<b></div>
-      <img style="border:solid 8px #000000;" width="220px" src="./images/inaki.png" />
-      <p><strong>{{Nostext3}}</strong></p>
-    </div>
+  </section>
+
+
+  <section>
+    <center style="background:black; margin:0px">
+      <div class="row" style="background:black; margin:0px">
+        <div class="page" id="contact">
+        <!-- page contact -->
+        <h3 style="color: white;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;font-family: 'Ubuntu', sans-serif;">  Contacto </h3>
+          <fieldset id="contact_form">
+            <div id="msgs"> </div>
+            <form id="cform" name="cform" method="post" action="">
+              <input type="text" id="name" name="name" value="Full Name*" onfocus="if(this.value == 'Full Name*') this.value = ''"
+                              onblur="if(this.value == '') this.value = 'Full Name*'" />
+              <input type="text" id="email" name="email" value="Email Address*" onfocus="if(this.value == 'Email Address*') this.value = ''"
+                              onblur="if(this.value == '') this.value = 'Email Address*'" />
+              <input type="text" id="subject" name="subject" value="Subject*" onfocus="if(this.value == 'Subject*') this.value = ''"
+                              onblur="if(this.value == '') this.value = 'Subject*'" />
+              <textarea id="msg" name="message" onfocus="if(this.value == 'Your Message*') this.value = ''"
+                              onblur="if(this.value == '') this.value = 'Your Message*'">Your Message*</textarea>
+              <button id="submit" class="button"> Send Message</button>
+            </form>
+          </fieldset>
+        </div>
+      </div>
     </center>
+  </section>
 
-    </div>
+  <section>
+    <center>
+      <img style="margin:0px 0px 10px 0px;" width="45px" src="./images/logow.png"/>
+      <span style="color:white; vertical-align:23px;">
+        <strong>Gukere 2012</strong>. Estámos en Saiolan - Goiru Kalea 1, A Eraikuntza 4º, 20500 Arrasate Guipúzcoa (España).
+      </span>
+    <center>
+  </section>
 
-</div>
 
-
-  <center style="background:black; margin:0px">
-  <div class="row" style="background:black; margin:0px">
-    <div class="page" id="contact">
-    <!-- page contact -->
-    <h3 style="color:white">  Contacto </h3>
-      <fieldset id="contact_form">
-        <div id="msgs"> </div>
-        <form id="cform" name="cform" method="post" action="">
-          <input type="text" id="name" name="name" value="Full Name*" onfocus="if(this.value == 'Full Name*') this.value = ''"
-                          onblur="if(this.value == '') this.value = 'Full Name*'" />
-          <input type="text" id="email" name="email" value="Email Address*" onfocus="if(this.value == 'Email Address*') this.value = ''"
-                          onblur="if(this.value == '') this.value = 'Email Address*'" />
-          <input type="text" id="subject" name="subject" value="Subject*" onfocus="if(this.value == 'Subject*') this.value = ''"
-                          onblur="if(this.value == '') this.value = 'Subject*'" />
-          <textarea id="msg" name="message" onfocus="if(this.value == 'Your Message*') this.value = ''"
-                          onblur="if(this.value == '') this.value = 'Your Message*'">Your Message*</textarea>
-          <button id="submit" class="button"> Send Message</button>
-        </form>
-      </fieldset>
-    </div>
-
-  </div>
-  </center>
-
-  <center>
-  <img style="margin:0px 0px 10px 0px;" width="45px" src="./images/logow.png"/>
-  <span style="color:white; vertical-align:23px;">
-    <strong>Gukere 2012</strong>. Estámos en Saiolan - Goiru Kalea 1, A Eraikuntza 4º, 20500 Arrasate Guipúzcoa (España).
-  </span>
-  <center>
-  </div>
 
   <!-- Included JS Files (Uncompressed) -->
   <!--
