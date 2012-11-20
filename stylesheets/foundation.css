@@ -93,35 +93,26 @@ background-image: url(../images/linkedin.png);
 -moz-border-radius: 50em;
 border-radius: 50em;}
 
-.circular {
-  background: white;
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  overflow:hidden;
-  }
-.circular img{
-  max-width:100%;
-  max-height:100%;
-}
+.rotate{
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
 
-.circularp {
-  background: white;
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  overflow:hidden;
-  }
-.circularp img{
-  max-width:100%;
-  max-height:100%;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+
+    overflow:hidden;
+
+    }
+
+.rotate:hover
+{
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
 }
 
 .circulars {
@@ -222,11 +213,8 @@ figure { margin: 0; }
 /* Base Type Styles Using Modular Scale ---------------------- */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td { margin: 0; padding: 0; font-size: 14px; direction: ltr; }
 
-<<<<<<< HEAD
 p { font-family: inherit; font-weight: normal; font-size: 17px; line-height: 1.6; margin-bottom: 17px; }
-=======
-p { font-family: inherit; font-weight: normal; font-size: 19px; line-height: 1.6; margin-bottom: 17px; }
->>>>>>> 010c8427712fb33a1beb3d11e31fc2b1b9c20476
+
 p.lead { font-size: 17.5px; line-height: 1.6; margin-bottom: 17px; }
 
 aside p { font-size: 13px; line-height: 1.35; font-style: italic; }
