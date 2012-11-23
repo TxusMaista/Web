@@ -38,11 +38,14 @@
   </center>
 
   <div class="row" style="background:transparent;">
-    <div class="six columns">
+    <center>
+    <div id="logue" class="six columns">
       <h1><img style="vertical-align:-15px;" width="100px" src="./images/logo.png"/>
         <span style="text-shadow:0px 2px 0px rgba(0, 0, 0, 0.75); color:white; font-family: 'logo', sans-serif;">gukere</span>
       </h1>
     </div>
+    </center>
+
 
     <center>
     <div style="margin-top:20px;font-size:4em;" class="six columns">
@@ -52,16 +55,17 @@
       <a class="contacto">Contact</a>
     </div>
     <p></br> </p>
-    <p style="display: inline-block;background-color: #008FD5;padding: 12px;margin: 4px 10px;"><a href="https://twitter.com/gukere" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large">Seguir a @gukere</a>
+    <p style="display: inline-block;background-color: #008FD5;padding: 12px;margin: 4px 10px;">
+      <a href="https://twitter.com/gukere" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large">Seguir a @gukere</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
     </center>
   </div>
 
   <div id="eslogan" class="" style="margin:0px 0px; background:url(./images/dot-pattern.png);height:500px">
-    <div id="sltext" style=" margin:0 auto 0 auto; width:700px;padding-top:180px;text-align:center;">
-      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 4em;font-family: 'Ubuntu', sans-serif;">Universal web apps</span>
+    <div id="sltext" style=" margin:0 auto; width:75%;padding-top:10%;text-align:center;">
+      <span class="slog1" >Universal web apps</span>
       <br>
-      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 3.5em;font-family: 'Ubuntu', sans-serif;">"Use everywhere you want"</span>
+      <span class="slog2">"Use everywhere you want"</span>
     </div>
   </div>
 
@@ -71,7 +75,7 @@
 
       <div style="margin:0px 0px; background:#008FD5;">
 
-      <div style="color:white;" class="row"><p style="color: white;text-shadow: 0px 2px 3px #0071A9;font-size:56px;font-weight:bold;font-family: 'Ubuntu', sans-serif;"> Qué hacemos</p>
+      <div style="color:white;" class="row"><p class="sec_tit"> Qué hacemos</p>
         <div class="four columns">
           <div style="margin-top:40px;" class="panel2">
             <div style="border-radius:15px; margin-bottom:20px; padding:10px; background:rgba(256,256,256,0.4);">
@@ -108,7 +112,7 @@
 
   <section>
     <div style="margin:0px 0px; background:white;">
-      <div class="row"><p style="color: #008FD5;text-shadow: 0px 2px 3px #0071A9;font-size:56px;font-weight:bold;font-family: 'Ubuntu', sans-serif;">Cómo</p>
+      <div class="row"><p style="color: #008FD5;text-shadow: 0px 2px 3px #0071A9;font-size:4em;font-weight:bold;font-family: 'Ubuntu', sans-serif;">Cómo</p>
         <div class="eight columns">
           <div style="margin-top:40px;" class="panel">
             <p style="text-align:justify;">Desarrollamos aplicaciones web para todos los dispositivos utilizando <strong>Responsive design</strong>, sin olvidarnos de que la experiencia de usuario es muy diferente dependiendo del dispositivo que utilice y adecuando la aplicación para cada uso automáticamente.</p>
@@ -129,8 +133,13 @@
   </section>
 
   <section>
+    <script type="text/javascript" language="javascript">
+                function changeImage(img){
+                   document.getElementById('avat').src=img;
+                }
+    </script>
     <div style="background:#FFC507; margin:0px">
-      <div class="row"><p style="color: white;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;">Quién</p>
+      <div class="row"><p class="sec_tit">Quién</p>
         <center style="margin-top:20px;">
         <div style="margin:0px 30px;" class="three columns">
           <div class="circulars" ><img src="./images/avat1.png" alt="" /></div>
@@ -146,7 +155,7 @@
 
         </div>
         <div style="margin:0px 30px;" class="three columns">
-          <div class="circulars" ><img src="./images/avat3.png" alt="" /></div>
+          <div class="circulars" ><img id="avat" src="./images/avat3.png" alt="" onmouseover="changeImage('./images/avat33.png')" onMouseOut="changeImage('./images/avat3.png')" /></div>
           <p><strong>Joseba Nogales</strong></p>
           <p>"Backend Developer"</p>
           <p><a class="sb twitter tcircle" href="#"></a><a class="sb linkedin tcircle" href="#"></a></p>
@@ -168,7 +177,7 @@
       <div class="row" style="background:black; margin:0px">
         <div class="page" id="contact">
         <!-- page contact -->
-        <h3 style="color: white;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;font-family: 'Ubuntu', sans-serif;">  Contacto </h3>
+        <p class="sec_tit">  Contacto </p>
           <fieldset id="contact_form">
             <div id="msgs"> </div>
             <form id="cform" name="cform" method="post" action="">

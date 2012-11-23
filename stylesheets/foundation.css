@@ -47,6 +47,32 @@ html, body {
 }
 
 /* GUKERE ---------------------- */
+
+.slog1{
+  display: inline-block;
+  background-color: rgba(256, 256, 256, 0.9);
+  padding: 12px;margin: 4px 10px;
+  color: black;
+  font-size: 4em;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.slog2{
+  display: inline-block;
+  background-color: rgba(256, 256, 256, 0.9);
+  padding: 12px;margin: 4px 10px;
+  color: black;
+  font-size: 3.5em;
+  font-family: 'Ubuntu', sans-serif;
+}
+.sec_tit{
+  color: white;
+  text-shadow: 0px 2px 3px #0071A9;
+  font-size:4em;
+  font-weight:bold;font-family: 'Ubuntu', sans-serif;
+
+}
+
 a.sb, .sb a {
   width: 32px;
   height: 32px;
@@ -211,7 +237,7 @@ p a, p a:visited { line-height: inherit; }
 figure { margin: 0; }
 
 /* Base Type Styles Using Modular Scale ---------------------- */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td { margin: 0; padding: 0; font-size: 14px; direction: ltr; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td { margin: 0; padding: 0; font-size: 100%/1.5; direction: ltr; }
 
 p { font-family: inherit; font-weight: normal; font-size: 17px; line-height: 1.6; margin-bottom: 17px; }
 
@@ -1186,7 +1212,29 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   .clearing-main-right { height: 100%; right: 0; }
   .clearing-main-right:before { content: ""; display: block; width: 0; height: 0; border: solid 16px; border-color: transparent transparent transparent white; } }
 /* Small Devices ------------ */
+  /* GUKERE*/
+@media only screen and (max-width: 449px) { /* Global Misc --- */
+
+  .slog1{
+    font-size: 2em;
+  }
+  .slog2{
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 450px) { /* Global Misc --- */
+
+  .slog1{
+    font-size: 3em;
+  }
+  .slog2{
+    font-size: 2.4em;
+  }
+}
+
 @media only screen and (max-width: 767px) { /* Global Misc --- */
+
+
   /*                 */
   .left, .right { float: none; }
   body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
