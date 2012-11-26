@@ -40,11 +40,14 @@
   </center>
 
   <div class="row" style="background:transparent;">
-    <div class="six columns">
+    <center>
+    <div id="logue" class="six columns">
       <h1><img style="vertical-align:-15px;" width="100px" src="./images/logo.png"/>
         <span style="text-shadow:0px 2px 0px rgba(0, 0, 0, 0.75); color:white; font-family: 'logo', sans-serif;">gukere</span>
       </h1>
     </div>
+    </center>
+
 
     <center>
     <div style="margin-top:20px;font-size:4em;" class="six columns">
@@ -54,16 +57,16 @@
       <a class="section-link" href="#" id="contact">Contact</a>
     </div>
     <p></br> </p>
-    <p style="display: inline-block;background-color: #008FD5;padding: 12px;margin: 4px 10px;"><a href="https://twitter.com/gukere" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large">Seguir a @gukere</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+    <p style="display: inline-block;background-color: #008FD5;padding: 12px;margin: 30px 10px;">
+      <a href="https://twitter.com/gukere" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large">Seguir a @gukere</a></p>
     </center>
   </div>
 
   <div id="eslogan" class="" style="margin:0px 0px; background:url(./images/dot-pattern.png);height:500px">
-    <div id="sltext" style=" margin:0 auto 0 auto; width:700px;padding-top:180px;text-align:center;">
-      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 4em;font-family: 'Ubuntu', sans-serif;">{{Slogan1}} {{Slogan2}} {{Slogan3}}</span>
+    <div id="sltext" style=" margin:0 auto; width:75%;padding-top:10%;text-align:center;">
+      <span class="slog1" >Universal web apps</span>
       <br>
-      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 3.5em;font-family: 'Ubuntu', sans-serif;">"Use everywhere you want"</span>
+      <span class="slog2">"Use everywhere you want"</span>
     </div>
   </div>
 
@@ -72,7 +75,7 @@
 
       <div style="margin:0px 0px; background:#008FD5;">
 
-      <div style="color:white;" class="row"><p style="color: white;text-shadow: 0px 2px 3px #0071A9;font-size:56px;font-weight:bold;font-family: 'Ubuntu', sans-serif;"> Qué hacemos</p>
+      <div style="color:white;" class="row"><p class="sec_tit"> Qué hacemos</p>
         <div class="four columns">
           <div style="margin-top:40px;" class="panel2">
             <div style="border-radius:15px; margin-bottom:20px; padding:10px; background:rgba(256,256,256,0.4);">
@@ -109,7 +112,7 @@
 
   <section id="how-section">
     <div style="margin:0px 0px; background:white;">
-      <div class="row"><p style="color: #008FD5;text-shadow: 0px 2px 3px #0071A9;font-size:56px;font-weight:bold;font-family: 'Ubuntu', sans-serif;">Cómo</p>
+      <div class="row"><p style="color: #008FD5;text-shadow: 0px 2px 3px #0071A9;font-size:4em;font-weight:bold;font-family: 'Ubuntu', sans-serif;">Cómo</p>
         <div class="eight columns">
           <div style="margin-top:40px;" class="panel">
             <p style="text-align:justify;">Desarrollamos aplicaciones web para todos los dispositivos utilizando <strong>Responsive design</strong>, sin olvidarnos de que la experiencia de usuario es muy diferente dependiendo del dispositivo que utilice y adecuando la aplicación para cada uso automáticamente.</p>
@@ -130,27 +133,32 @@
   </section>
 
   <section id="who-section">
+    <script type="text/javascript" language="javascript">
+                function changeImage(img){
+                   document.getElementById('avat').src=img;
+                }
+    </script>
     <div style="background:#FFC507; margin:0px">
-      <div class="row"><p style="color: white;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;">Quién</p>
+      <div class="row"><p class="sec_tit">Quién</p>
         <center style="margin-top:20px;">
         <div style="margin:0px 30px;" class="three columns">
           <div class="circulars" ><img src="./images/avat1.png" alt="" /></div>
           <p><strong>Iñaki Cortajarena</strong></p>
           <p>"Frontend Developer"</p>
-          <p><a class="sb twitter tcircle" href="#"></a><a class="sb linkedin tcircle" href="#"></a></p>
+          <!--<p><a class="sb twitter tcircle" href="#"></a><a class="sb linkedin tcircle" href="#"></a></p>-->
         </div>
         <div style="margin:0px 30px;" class="three columns">
           <div class="circulars" ><img src="./images/avat2.png" alt="" /></div>
           <p><strong>Andoni Gómez</strong></p>
           <p>"Backend Developer"</p>
-          <p><a class="sb twitter tcircle" href="#"></a><a class="sb linkedin tcircle" href="#"></a></p>
+          <p><a class="sb twitter tcircle" href="https://twitter.com/dlacroixe"></a><a class="sb linkedin tcircle" href="http://es.linkedin.com/pub/andoni-gomez/24/ba4/bb4"></a></p>
 
         </div>
         <div style="margin:0px 30px;" class="three columns">
-          <div class="circulars" ><img src="./images/avat3.png" alt="" /></div>
+          <div class="circulars" ><img id="avat" src="./images/avat3.png" alt="" onmouseover="changeImage('./images/avat33.png')" onMouseOut="changeImage('./images/avat3.png')" /></div>
           <p><strong>Joseba Nogales</strong></p>
           <p>"Backend Developer"</p>
-          <p><a class="sb twitter tcircle" href="#"></a><a class="sb linkedin tcircle" href="#"></a></p>
+          <p><a class="sb twitter tcircle" href="https://twitter.com/_noga"></a></p>
 
         </div>
         </center>
@@ -162,28 +170,21 @@
       </div> -->
     </div>
   </section>
+
   <section id="contact-section">
-    <div style="background:black; margin:0px">
+    <div style="background:#41383C; margin:0px">
       <div class="row"><p style="color: #FFC507;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;">Contacto</p>
         <center style="margin-top:20px;">
           <div class="six columns">
-            <!--<fieldset id="contact_form">
-                <div id="msgs"> </div>
-                <form id="cform" name="cform" method="post" action="contact.php">
-                  <input type="text" id="name" name="name" value="Full Name*" onfocus="if(this.value == 'Full Name*') this.value = ''"
-                                  onblur="if(this.value == '') this.value = 'Full Name*'" />
-                  <input type="text" id="email" name="email" value="Email Address*" onfocus="if(this.value == 'Email Address*') this.value = ''"
-                                  onblur="if(this.value == '') this.value = 'Email Address*'" />
-                  <input type="text" id="subject" name="subject" value="Subject*" onfocus="if(this.value == 'Subject*') this.value = ''"
-                                  onblur="if(this.value == '') this.value = 'Subject*'" />
-                  <textarea id="msg" name="message" onfocus="if(this.value == 'Your Message*') this.value = ''"
-                                  onblur="if(this.value == '') this.value = 'Your Message*'">Your Message*</textarea>
-                  <button id="submit" class="button"> Send Message</button>
-                </form>
-            </fieldset>-->
-            <div id="container">
-             <a href="mailto:contacto@gukere.com"><h2 class="contact">Hello</h2></a>
-           </div>
+            <!--<div id="container">
+             <a href="mailto:contacto@gukere.com"><h2 class="contact">Hola!</h2></a>
+           </div>-->
+           <form id="contactgukere" method="post" action="send_form_email.php">
+            <input type="text" id="cname" name="name" class="required" value="Nombre" onfocus="if(this.value == 'Nombre') this.value = ''"/>
+            <input type="text" id="cemail" name="email" class="required email" value="Email" onfocus="if(this.value == 'Email') this.value = ''" onblur="if(this.value == '') this.value = 'Email'"/>
+            <textarea name="comments" id="ccomments" class="required" rows="5" columns="40"></textarea>
+            <button id="submit" class="button">Mail!</button>
+           </form>
           </div>
           <div class="six columns">
             <img style="margin:0px 0px 10px 0px;" width="45px" src="./images/logow.png"/>
@@ -199,50 +200,13 @@
     </div>
   </section>
 
-  <!-- Included JS Files (Uncompressed) -->
-  <!--
-
-  <script src="javascripts/jquery.js"></script>
-
-  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-
-  <script src="javascripts/jquery.foundation.forms.js"></script>
-
-  <script src="javascripts/jquery.foundation.reveal.js"></script>
-
-  <script src="javascripts/jquery.foundation.orbit.js"></script>
-
-  <script src="javascripts/jquery.foundation.navigation.js"></script>
-
-  <script src="javascripts/jquery.foundation.buttons.js"></script>
-
-  <script src="javascripts/jquery.foundation.tabs.js"></script>
-
-  <script src="javascripts/jquery.foundation.tooltips.js"></script>
-
-  <script src="javascripts/jquery.foundation.accordion.js"></script>
-
-  <script src="javascripts/jquery.placeholder.js"></script>
-
-  <script src="javascripts/jquery.foundation.alerts.js"></script>
-
-  <script src="javascripts/jquery.foundation.topbar.js"></script>
-
-  <script src="javascripts/jquery.foundation.joyride.js"></script>
-
-  <script src="javascripts/jquery.foundation.clearing.js"></script>
-
-  <script src="javascripts/jquery.foundation.magellan.js"></script>
-
-  -->
-
   <!-- Included JS Files (Compressed) -->
   <script src="javascripts/jquery.js"></script>
+  <script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
   <script src="javascripts/script.js"></script>
   <script src="javascripts/foundation.min.js"></script>
 
   <!-- Initialize JS Plugins -->
-  <!--<script src="javascripts/app.js"></script>-->
   <script src="javascripts/lang/template.js"></script>
   <script src="javascripts/ml.js"></script>
 
