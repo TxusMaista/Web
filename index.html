@@ -9,10 +9,12 @@
   <meta charset="utf-8" />
 
   <!-- Set the viewport width to device width for mobile -->
+  <meta name="description" content="Gukere Team - HTML5, responsive design and open source web developers">
+  <meta name="author" content="Gukere Team | contacto@gukere.com">
   <meta name="viewport" content="width=device-width" />
-
+  <meta content="html5, css3, javascript, apple, iphone, ipad, android, tablet, apps, applications, responsive design, ajax, design, webdesign, geo, custom development, arrasate, mondragon" name="keywords">
   <title>Gukere</title>
-
+  <link rel="icon" type="image/png" href="images/favicon.ico">
   <!-- Included CSS Files (Uncompressed) -->
   <!--
   <link rel="stylesheet" href="stylesheets/foundation.css">
@@ -46,10 +48,10 @@
 
     <center>
     <div style="margin-top:20px;font-size:4em;" class="six columns">
-      <a class="quehacemos">What</a>
-      <a class="nosotros">How</a>
-      <a class="clientes">Who</a>
-      <a class="contacto">Contact</a>
+      <a class="section-link" href="#" id="what">What</a>
+      <a class="section-link" href="#" id="how">How</a>
+      <a class="section-link" href="#" id="who">Who</a>
+      <a class="section-link" href="#" id="contact">Contact</a>
     </div>
     <p></br> </p>
     <p style="display: inline-block;background-color: #008FD5;padding: 12px;margin: 4px 10px;"><a href="https://twitter.com/gukere" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large">Seguir a @gukere</a>
@@ -59,14 +61,13 @@
 
   <div id="eslogan" class="" style="margin:0px 0px; background:url(./images/dot-pattern.png);height:500px">
     <div id="sltext" style=" margin:0 auto 0 auto; width:700px;padding-top:180px;text-align:center;">
-      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 4em;font-family: 'Ubuntu', sans-serif;">Universal web apps</span>
+      <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 4em;font-family: 'Ubuntu', sans-serif;">{{Slogan1}} {{Slogan2}} {{Slogan3}}</span>
       <br>
       <span style="display: inline-block;background-color: rgba(256, 256, 256, 0.9);padding: 12px;margin: 4px 10px;color: black;font-size: 3.5em;font-family: 'Ubuntu', sans-serif;">"Use everywhere you want"</span>
     </div>
   </div>
 
-
-  <section>
+  <section id="what-section">
     <div style="margin:0px 0px; background:white;">
 
       <div style="margin:0px 0px; background:#008FD5;">
@@ -106,7 +107,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="how-section">
     <div style="margin:0px 0px; background:white;">
       <div class="row"><p style="color: #008FD5;text-shadow: 0px 2px 3px #0071A9;font-size:56px;font-weight:bold;font-family: 'Ubuntu', sans-serif;">Cómo</p>
         <div class="eight columns">
@@ -128,7 +129,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="who-section">
     <div style="background:#FFC507; margin:0px">
       <div class="row"><p style="color: white;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;">Quién</p>
         <center style="margin-top:20px;">
@@ -161,43 +162,42 @@
       </div> -->
     </div>
   </section>
-
-
-  <section>
-    <center style="background:black; margin:0px">
-      <div class="row" style="background:black; margin:0px">
-        <div class="page" id="contact">
-        <!-- page contact -->
-        <h3 style="color: white;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;font-family: 'Ubuntu', sans-serif;">  Contacto </h3>
-          <fieldset id="contact_form">
-            <div id="msgs"> </div>
-            <form id="cform" name="cform" method="post" action="">
-              <input type="text" id="name" name="name" value="Full Name*" onfocus="if(this.value == 'Full Name*') this.value = ''"
-                              onblur="if(this.value == '') this.value = 'Full Name*'" />
-              <input type="text" id="email" name="email" value="Email Address*" onfocus="if(this.value == 'Email Address*') this.value = ''"
-                              onblur="if(this.value == '') this.value = 'Email Address*'" />
-              <input type="text" id="subject" name="subject" value="Subject*" onfocus="if(this.value == 'Subject*') this.value = ''"
-                              onblur="if(this.value == '') this.value = 'Subject*'" />
-              <textarea id="msg" name="message" onfocus="if(this.value == 'Your Message*') this.value = ''"
-                              onblur="if(this.value == '') this.value = 'Your Message*'">Your Message*</textarea>
-              <button id="submit" class="button"> Send Message</button>
-            </form>
-          </fieldset>
-        </div>
+  <section id="contact-section">
+    <div style="background:black; margin:0px">
+      <div class="row"><p style="color: #FFC507;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;">Contacto</p>
+        <center style="margin-top:20px;">
+          <div class="six columns">
+            <!--<fieldset id="contact_form">
+                <div id="msgs"> </div>
+                <form id="cform" name="cform" method="post" action="contact.php">
+                  <input type="text" id="name" name="name" value="Full Name*" onfocus="if(this.value == 'Full Name*') this.value = ''"
+                                  onblur="if(this.value == '') this.value = 'Full Name*'" />
+                  <input type="text" id="email" name="email" value="Email Address*" onfocus="if(this.value == 'Email Address*') this.value = ''"
+                                  onblur="if(this.value == '') this.value = 'Email Address*'" />
+                  <input type="text" id="subject" name="subject" value="Subject*" onfocus="if(this.value == 'Subject*') this.value = ''"
+                                  onblur="if(this.value == '') this.value = 'Subject*'" />
+                  <textarea id="msg" name="message" onfocus="if(this.value == 'Your Message*') this.value = ''"
+                                  onblur="if(this.value == '') this.value = 'Your Message*'">Your Message*</textarea>
+                  <button id="submit" class="button"> Send Message</button>
+                </form>
+            </fieldset>-->
+            <div id="container">
+             <a href="mailto:contacto@gukere.com"><h2 class="contact">Hello</h2></a>
+           </div>
+          </div>
+          <div class="six columns">
+            <img style="margin:0px 0px 10px 0px;" width="45px" src="./images/logow.png"/>
+            <span style="color:white; vertical-align:23px;">
+              <strong>Gukere 2012</strong>. 
+              <p>Estámos en Saiolan</p>
+              <p>Goiru Kalea 1, A Eraikuntza - 4º</p>
+              <p>20500 Arrasate Guipúzcoa (España)</p>
+            </span>
+          </div>
+        </center>
       </div>
-    </center>
+    </div>
   </section>
-
-  <section>
-    <center>
-      <img style="margin:0px 0px 10px 0px;" width="45px" src="./images/logow.png"/>
-      <span style="color:white; vertical-align:23px;">
-        <strong>Gukere 2012</strong>. Estámos en Saiolan - Goiru Kalea 1, A Eraikuntza 4º, 20500 Arrasate Guipúzcoa (España).
-      </span>
-    <center>
-  </section>
-
-
 
   <!-- Included JS Files (Uncompressed) -->
   <!--
@@ -238,13 +238,13 @@
 
   <!-- Included JS Files (Compressed) -->
   <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/script.js"></script>
   <script src="javascripts/foundation.min.js"></script>
 
   <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js"></script>
+  <!--<script src="javascripts/app.js"></script>-->
   <script src="javascripts/lang/template.js"></script>
   <script src="javascripts/ml.js"></script>
-
 
     <script>
     $(window).load(function(){

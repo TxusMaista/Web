@@ -173,7 +173,32 @@ display: inline-block;}
   border: black;
 }
 /* GUKERE ---------------------- */
+.contact {
+    font-size: 80px;
+    line-height: 70px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
 
+#container {
+    background-color: white;
+    height: 135px;
+    width: 400px;
+    margin: 20px auto;
+    border: 3px dashed #21303b;
+     
+    /*shadow*/
+    -webkit-box-shadow: 10px 10px 10px #000;
+    -moz-box-shadow: 10px 10px 10px #000;
+    box-shadow: 10px 10px 10px #000;
+     
+    /*rounded corners*/
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
 
 /* Links ---------------------- */
 a { color: white; margin: 0 10px;text-decoration: none; font-weight:bold; font-size:17px; line-height: inherit; }
