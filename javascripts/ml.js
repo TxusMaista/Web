@@ -2,17 +2,6 @@
 //var template = $('#personTpl').html();
 var template = Template.f_body();
 
-
-
-var setLang = function(lang){
-	//console.log(lang);
-	if(lang == 'es') changeLang('javascripts/lang/es.json');
-	else if(lang == 'eu') changeLang('javascripts/lang/eu.json');
-	else changeLang('javascripts/lang/en.json');
-	//console.log('end setLang');
-};
-
-
 var changeLang = function(uri){
 
 	$.getJSON(uri, function(data){
@@ -32,5 +21,13 @@ else if (userLang == 'eu'){
 else{
 	changeLang('javascripts/lang/en.json');
 }
+
+var setLang = function(lang){
+	//console.log(lang);
+	if(lang == 'es') changeLang('javascripts/lang/es.json');
+	else if(lang == 'eu') changeLang('javascripts/lang/eu.json');
+	else changeLang('javascripts/lang/en.json');
+	//console.log('end setLang');
+};
 
 
