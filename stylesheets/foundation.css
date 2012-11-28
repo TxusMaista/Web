@@ -10,7 +10,7 @@ font-family: "logo";
 src: url(../images/neuropoli.ttf) format("truetype");
 }
 
-/*
+
 @font-face {
   font-family: 'logo';
   font-style: normal;
@@ -18,13 +18,7 @@ src: url(../images/neuropoli.ttf) format("truetype");
   src: url(../images/neuropoli.ttf) format('truetype');
 }
 
-@font-face {
-  font-family: 'marvel';
-  font-style: normal;
-  font-weight: 700;
-  src: url(http://fonts.googleapis.com/css?family=Marvel) format('truetype');
-}
-*/
+
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 body { background: #652e8f; font-family: 'Ubuntu', Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 1; color: #222222; position: relative; -webkit-font-smoothing: antialiased; }
