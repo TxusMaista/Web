@@ -10,13 +10,14 @@ font-family: "logo";
 src: url(../images/neuropoli.ttf) format("truetype");
 }
 
+/*
 @font-face {
   font-family: 'logo';
   font-style: normal;
   font-weight: 700;
   src: url(../images/neuropoli.ttf) format('truetype');
 }
-/*
+
 @font-face {
   font-family: 'marvel';
   font-style: normal;
@@ -47,6 +48,35 @@ html, body {
 }
 
 /* GUKERE ---------------------- */
+#toTop {
+  display:none;
+  text-decoration:none;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  overflow:hidden;
+  width:51px;
+  height:51px;
+  border:none;
+  text-indent:100%;
+  background:url(../images/ui.totop.png) no-repeat left top;
+}
+
+#toTopHover {
+  background:url(../images/ui.totop.png) no-repeat left -51px;
+  width:51px;
+  height:51px;
+  display:block;
+  overflow:hidden;
+  float:left;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+  outline:none;
+}
 
 .slog1{
   display: inline-block;
@@ -67,7 +97,13 @@ html, body {
 }
 .sec_tit{
   color: white;
-  text-shadow: 0px 2px 3px #0071A9;
+  /*text-shadow: 0px 2px 3px #0071A9;*/
+  font-size:4em;
+  font-weight:bold;font-family: 'Ubuntu', sans-serif;
+}
+
+.sec_tit_c{
+  color: #008FD5;
   font-size:4em;
   font-weight:bold;font-family: 'Ubuntu', sans-serif;
 
@@ -214,12 +250,12 @@ display: inline-block;}
     width: 400px;
     margin: 20px auto;
     border: 3px dashed #21303b;
-     
+
     /*shadow*/
     -webkit-box-shadow: 10px 10px 10px #000;
     -moz-box-shadow: 10px 10px 10px #000;
     box-shadow: 10px 10px 10px #000;
-     
+
     /*rounded corners*/
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;

@@ -22,7 +22,8 @@
   <link rel="stylesheet" href="stylesheets/app.css">
 
   <script src="javascripts/modernizr.foundation.js"></script>
-  <!--<script src="javascripts/mustache.js"></script>-->
+
+  <!-- // <script src="javascripts/mustache.js"></script> -->
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -60,9 +61,9 @@
 
   <div id="eslogan" class="" style="margin:0px 0px; background:url(./images/dot-pattern.png);height:500px">
     <div id="sltext" style=" margin:0 auto; width:75%;padding-top:10%;text-align:center;">
-      <span class="slog1" >universal web apps</span>
+      <h1 class="slog1" >Universal Web App's</h1>
       <br>
-      <span class="slog2">Aplicaciones web para <strong>todos</strong> tus dispositivos</span>
+      <h2 class="slog2">Una aplicación para <strong>todos</strong> tus dispositivos</h2>
     </div>
   </div>
 
@@ -108,7 +109,7 @@
 
   <section id="how-section">
     <div style="margin:0px 0px; background:white;">
-      <div class="row"><p style="color: #008FD5;text-shadow: 0px 2px 3px #0071A9;font-size:4em;font-weight:bold;font-family: 'Ubuntu', sans-serif;">Cómo</p>
+      <div class="row"><p class="sec_tit_c">Cómo</p>
         <div class="eight columns">
           <div style="margin-top:40px;" class="panel">
             <p style="text-align:justify;">Desarrollamos aplicaciones web para todos los dispositivos utilizando <strong>Responsive design</strong>, sin olvidarnos de que la experiencia de usuario es muy diferente dependiendo del dispositivo que utilice y adecuando la aplicación para cada uso automáticamente.</p>
@@ -167,14 +168,14 @@
 
   <section id="contact-section">
     <div style="background:#41383C; margin:0px">
-      <div class="row"><p style="color: #FFC507;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;">Contacto</p>
+      <div class="row"><p class="sec_tit">Contacto</p>
         <center style="margin-top:20px;">
           <div class="six columns">
             <!--<div id="container">
              <a href="mailto:contacto@gukere.com"><h2 class="contact">Hola!</h2></a>
            </div>-->
            <form id="contactgukere" method="post" action="send_form_email.php">
-            <input type="text" id="cname" name="name" class="required" value="Izena/Nombre/Name" onfocus="if(this.value == 'Izena/Nombre/Name') this.value = ''"/>
+            <input type="text" id="cname" name="name" class="required" value="Nombre" onfocus="if(this.value == 'Nombre') this.value = ''" onblur="if(this.value == '') this.value = 'Nombre'"/>
             <input type="text" id="cemail" name="email" class="required email" value="Email" onfocus="if(this.value == 'Email') this.value = ''" onblur="if(this.value == '') this.value = 'Email'"/>
             <textarea name="comments" id="ccomments" class="required" rows="5" columns="40"></textarea>
             <button id="submit" class="button">Mail!</button>
@@ -183,10 +184,11 @@
           <div class="six columns">
             <img style="margin:0px 0px 10px 0px;" width="45px" src="./images/logow.png"/>
             <span style="color:white; vertical-align:23px;">
-              <strong>Gukere Team</strong> 
+              <strong>Gukere Team</strong>
               <p>Estamos en Saiolan</p>
               <p>Goiru Kalea 1, Edificio A - 4º</p>
               <p>20500 Arrasate Guipúzcoa (España)</p>
+              <p>Tlf: 943 71 20 72</p>
             </span>
           </div>
         </center>
@@ -201,14 +203,29 @@
   <script src="javascripts/foundation.min.js"></script>
 
   <!-- Initialize JS Plugins -->
-  <!--<script src="javascripts/lang/template.js"></script>
-  <script src="javascripts/ml.js"></script>-->
+  <!-- <script src="javascripts/lang/template.js"></script>
+  <script src="javascripts/ml.js"></script> -->
+  <!-- easing plugin ( optional ) -->
+  <script src="javascripts/easing.js"></script>
+  <!-- UItoTop plugin -->
+  <script src="javascripts/jquery.ui.totop.min.js"></script>
+  <!-- Starting the plugin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /*
+      var defaults = {
+          containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear'
+      };
+      */
 
-    <script>
-    $(window).load(function(){
-      $("#featured").orbit();
+      $().UItoTop({ easingType: 'easeOutQuart' });
+
     });
-    </script>
+  </script>
+
 
 </body>
 </html>
