@@ -6,6 +6,7 @@ $(document).ready(function() {
    $(".section-link").click(function(e) {
    		goToByScroll($(this).prop('id') + '-section');
 	});
+   
    $("#contactgukere").validate();
 });
 

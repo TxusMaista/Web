@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="stylesheets/app.css">
 
   <script src="javascripts/modernizr.foundation.js"></script>
-  <!--<script src="javascripts/mustache.js"></script>-->
+  <script src="javascripts/mustache.js"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -44,17 +44,16 @@
     </div>
     </center>
 
-
     <center>
     <div style="margin-top:20px;font-size:4em;" class="six columns">
-      <a class="section-link" href="#" id="what">Qué</a>
-      <a class="section-link" href="#" id="how">Cómo</a>
-      <a class="section-link" href="#" id="who">Nosotros</a>
-      <a class="section-link" href="#" id="contact">Contacto</a>
+      <a class="section-link" href="#" id="what">{{what}}</a>
+      <a class="section-link" href="#" id="how">{{how}}</a>
+      <a class="section-link" href="#" id="who">{{about}}</a>
+      <a class="section-link" href="#" id="contact">{{contact}}</a>
     </div>
     <p></br> </p>
     <p style="display: inline-block;background-color: #008FD5;padding: 12px;margin: 30px 10px;">
-      <a href="https://twitter.com/gukere" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large">Sigue a @gukere</a></p>
+      <a href="https://twitter.com/gukere" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large">{{followtwitter}}</a></p>
     </center>
   </div>
 
@@ -62,7 +61,7 @@
     <div id="sltext" style=" margin:0 auto; width:75%;padding-top:10%;text-align:center;">
       <span class="slog1" >universal web apps</span>
       <br>
-      <span class="slog2">Aplicaciones web para <strong>todos</strong> tus dispositivos</span>
+      <span class="slog2">{{slogan1}} <strong>{{slogan2}}</strong> {{slogan3}}</span>
     </div>
   </div>
 
@@ -71,13 +70,13 @@
 
       <div style="margin:0px 0px; background:#008FD5;">
 
-      <div style="color:white;" class="row"><p class="sec_tit">Qué</p>
+      <div style="color:white;" class="row"><p class="sec_tit">{{what}}</p>
         <div class="four columns">
           <div style="margin-top:40px;" class="panel2">
             <div style="border-radius:15px; margin-bottom:20px; padding:10px; background:rgba(256,256,256,0.4);">
             <center><img class="rotate" width="120px" src="./images/crawler.png" /></center>
             </div>
-            <p style="text-align:justify;"><strong>Recogemos</strong> información de todas las redes sociales, Rss, Apis y páginas webs de terceros.</p>
+            <p style="text-align:justify;"><strong>{{whattext11}}</strong> {{whattext12}}</p>
           </div>
         </div>
 
@@ -86,7 +85,7 @@
             <div style="border-radius:15px; margin-bottom:20px; padding:10px; background:rgba(256,256,256,0.4);">
             <center><img class="rotate" width="120px" src="./images/tratamiento.png" /></center>
             </div>
-            <p style="text-align:justify;"><strong>Tratamos</strong> la información conseguida la enriquecemos, categorizandola, valorándola y estructurándola.</p>
+            <p style="text-align:justify;"><strong>{{whattext21}}</strong> {{whattext22}}</p>
           </div>
         </div>
 
@@ -95,7 +94,7 @@
             <div style="border-radius:15px; margin-bottom:20px; padding:10px; background:rgba(256,256,256,0.4);">
             <center><img width="160px" src="./images/multi.png" /></center>
             </div>
-            <p style="text-align:justify;"><strong>Presentamos</strong> la información tratada, personalizada a cada usuario y disponible para todos los dispositivos.</p>
+            <p style="text-align:justify;"><strong>{{whattext31}}</strong> {{whattext32}}</p>
           </div>
         </div>
 
@@ -111,7 +110,7 @@
       <div class="row"><p style="color: #008FD5;text-shadow: 0px 2px 3px #0071A9;font-size:4em;font-weight:bold;font-family: 'Ubuntu', sans-serif;">Cómo</p>
         <div class="eight columns">
           <div style="margin-top:40px;" class="panel">
-            <p style="text-align:justify;">Desarrollamos aplicaciones web para todos los dispositivos utilizando <strong>Responsive design</strong>, sin olvidarnos de que la experiencia de usuario es muy diferente dependiendo del dispositivo que utilice y adecuando la aplicación para cada uso automáticamente.</p>
+            <p style="text-align:justify;">{{howtext1}} <strong>{{howtext2}}</strong>{{howtext3}}</p>
           </div>
         </div>
 
@@ -119,7 +118,7 @@
 
         <div class="eight columns">
           <div style="margin-top:40px;" class="panel">
-            <p style="text-align:justify;">Para ello utilizamos en estándar <strong>HTML5 + CSS3 + JavaScript</strong> que nos ofrece nuevas posibilidades. Con un solo desarrollo, conseguimos aplicaciones que se pueden utilizar en cualquier dispositivo con conexión a internet y un navegador, con las mismas funcionalidades que ofrecen las aplicaciones nativas.</p>
+            <p style="text-align:justify;">{{howtext4}} <strong>{{howtext5}}</strong> {{howtext6}}</p>
           </div>
         </div>
 
@@ -135,25 +134,27 @@
                 }
     </script>
     <div style="background:#FFC507; margin:0px">
-      <div class="row"><p class="sec_tit">Nosotros</p>
+      <div class="row"><p class="sec_tit">Quién</p>
         <center style="margin-top:20px;">
         <div style="margin:0px 30px;" class="three columns">
-          <div class="circulars" ><img src="./images/avati.png" alt="" /></div>
+          <div class="circulars" ><img src="./images/avat1.png" alt="" /></div>
           <p><strong>Iñaki Cortajarena</strong></p>
-          <p>Frontend Developer</p>
+          <p>{{abouttext12}}</p>
           <!--<p><a class="sb twitter tcircle" href="#"></a><a class="sb linkedin tcircle" href="#"></a></p>-->
         </div>
         <div style="margin:0px 30px;" class="three columns">
-          <div class="circulars" ><img src="./images/avatn.png" alt="" /></div>
-          <p><strong>Joseba Nogales</strong></p>
-          <p>Backend Developer</p>
-          <p><a class="sb twitter tcircle" href="https://twitter.com/_noga"></a></p>
+          <div class="circulars" ><img src="./images/avat2.png" alt="" /></div>
+          <p><strong>Andoni Gómez</strong></p>
+          <p>{{abouttext22}}</p>
+          <p><a class="sb twitter tcircle" href="https://twitter.com/dlacroixe"></a><a class="sb linkedin tcircle" href="http://es.linkedin.com/pub/andoni-gomez/24/ba4/bb4"></a></p>
+
         </div>
         <div style="margin:0px 30px;" class="three columns">
-          <div class="circulars" ><img id="avat" src="./images/avatt.png" alt="" onmouseover="changeImage('./images/avatt.png')" onMouseOut="changeImage('./images/avatt.png')" /></div>
-          <p><strong>Andoni Gómez</strong></p>
-          <p>Backend Developer</p>
-          <p><a class="sb twitter tcircle" href="https://twitter.com/dlacroixe"></a><a class="sb linkedin tcircle" href="http://es.linkedin.com/pub/andoni-gomez/24/ba4/bb4"></a></p>
+          <div class="circulars" ><img id="avat" src="./images/avat3.png" alt="" onmouseover="changeImage('./images/avat33.png')" onMouseOut="changeImage('./images/avat3.png')" /></div>
+          <p><strong>Joseba Nogales</strong></p>
+          <p>{{abouttext22}}</p>
+          <p><a class="sb twitter tcircle" href="https://twitter.com/_noga"></a></p>
+
         </div>
         </center>
       </div>
@@ -167,7 +168,7 @@
 
   <section id="contact-section">
     <div style="background:#41383C; margin:0px">
-      <div class="row"><p style="color: #FFC507;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;">Contacto</p>
+      <div class="row"><p style="color: #FFC507;text-shadow: 0px 2px 3px white;font-size:56px;font-weight:bold;">{{contact}}</p>
         <center style="margin-top:20px;">
           <div class="six columns">
             <!--<div id="container">
@@ -177,16 +178,16 @@
             <input type="text" id="cname" name="name" class="required" value="Izena/Nombre/Name" onfocus="if(this.value == 'Izena/Nombre/Name') this.value = ''"/>
             <input type="text" id="cemail" name="email" class="required email" value="Email" onfocus="if(this.value == 'Email') this.value = ''" onblur="if(this.value == '') this.value = 'Email'"/>
             <textarea name="comments" id="ccomments" class="required" rows="5" columns="40"></textarea>
-            <button id="submit" class="button">Mail!</button>
+            <button id="submit" class="button">{{mail}}</button>
            </form>
           </div>
           <div class="six columns">
             <img style="margin:0px 0px 10px 0px;" width="45px" src="./images/logow.png"/>
             <span style="color:white; vertical-align:23px;">
               <strong>Gukere Team</strong> 
-              <p>Estamos en Saiolan</p>
-              <p>Goiru Kalea 1, Edificio A - 4º</p>
-              <p>20500 Arrasate Guipúzcoa (España)</p>
+              <p>{{contacttext1}}</p>
+              <p>{{contacttext2}}</p>
+              <p>{{contacttext3}}</p>
             </span>
           </div>
         </center>
@@ -201,8 +202,8 @@
   <script src="javascripts/foundation.min.js"></script>
 
   <!-- Initialize JS Plugins -->
-  <!--<script src="javascripts/lang/template.js"></script>
-  <script src="javascripts/ml.js"></script>-->
+  <script src="javascripts/lang/template.js"></script>
+  <script src="javascripts/ml.js"></script>
 
     <script>
     $(window).load(function(){
