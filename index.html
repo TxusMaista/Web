@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="stylesheets/app.css">
 
   <script src="javascripts/modernizr.foundation.js"></script>
-  <script src="javascripts/mustache.js"></script>
+  <!-- // <script src="javascripts/mustache.js"></script> -->
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -174,7 +174,7 @@
              <a href="mailto:contacto@gukere.com"><h2 class="contact">Hola!</h2></a>
            </div>-->
            <form id="contactgukere" method="post" action="send_form_email.php">
-            <input type="text" id="cname" name="name" class="required" value="Izena/Nombre/Name" onfocus="if(this.value == 'Izena/Nombre/Name') this.value = ''"/>
+            <input type="text" id="cname" name="name" class="required" value="Nombre" onfocus="if(this.value == 'Nombre') this.value = ''" onblur="if(this.value == '') this.value = 'Nombre'"/>
             <input type="text" id="cemail" name="email" class="required email" value="Email" onfocus="if(this.value == 'Email') this.value = ''" onblur="if(this.value == '') this.value = 'Email'"/>
             <textarea name="comments" id="ccomments" class="required" rows="5" columns="40"></textarea>
             <button id="submit" class="button">Mail!</button>
@@ -202,14 +202,29 @@
   <script src="javascripts/foundation.min.js"></script>
 
   <!-- Initialize JS Plugins -->
-  <script src="javascripts/lang/template.js"></script>
-  <script src="javascripts/ml.js"></script>
+  <!-- <script src="javascripts/lang/template.js"></script>
+  <script src="javascripts/ml.js"></script> -->
+  <!-- easing plugin ( optional ) -->
+  <script src="javascripts/easing.js"></script>
+  <!-- UItoTop plugin -->
+  <script src="javascripts/jquery.ui.totop.min.js"></script>
+  <!-- Starting the plugin -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /*
+      var defaults = {
+          containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear'
+      };
+      */
 
-    <script>
-    $(window).load(function(){
-      $("#featured").orbit();
+      $().UItoTop({ easingType: 'easeOutQuart' });
+
     });
-    </script>
+  </script>
+
 
 </body>
 </html>
