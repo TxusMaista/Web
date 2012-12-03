@@ -78,6 +78,7 @@ html, body {
   padding: 12px;margin: 4px 10px;
   color: black;
   font-size: 4em;
+  font-weight: normal;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -87,6 +88,7 @@ html, body {
   padding: 12px;margin: 4px 10px;
   color: black;
   font-size: 3.5em;
+  font-weight: normal;
   font-family: 'Ubuntu', sans-serif;
 }
 .sec_tit{
@@ -255,6 +257,32 @@ display: inline-block;}
     -moz-border-radius: 20px;
     border-radius: 20px;
 }
+
+#what-section {
+  margin:0px 0px;
+  background:#008FD5;
+}
+
+#what-section p {
+  color: white;
+}
+
+#how-section{
+  margin:0px 0px;
+  background:white;
+}
+
+#who-section {
+  background:#FFC507; 
+  margin:0px;
+}
+
+#contact-section {
+  background:#41383C; 
+  margin:0px;
+}
+
+
 
 /* Links ---------------------- */
 a { color: white; margin: 0 10px;text-decoration: none; font-weight:bold; font-size:17px; line-height: inherit; }
