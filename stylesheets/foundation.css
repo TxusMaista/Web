@@ -105,6 +105,12 @@ html, body {
 
 }
 
+.center{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 a.sb, .sb a {
   width: 32px;
   height: 32px;
@@ -184,8 +190,10 @@ border-radius: 50em;}
   overflow:hidden;
   }
 .circulars img{
-  max-width:100%;
-  max-height:100%;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 
@@ -320,7 +328,7 @@ p a, p a:visited { line-height: inherit; }
 figure { margin: 0; }
 
 /* Base Type Styles Using Modular Scale ---------------------- */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td { margin: 0; padding: 0; font-size: 100%/1.5; direction: ltr; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td { margin: 0 auto; padding: 0; font-size: 100%/1.5; direction: ltr; }
 
 p { font-family: inherit; font-weight: normal; font-size: 17px; line-height: 1.6; margin-bottom: 17px; }
 
